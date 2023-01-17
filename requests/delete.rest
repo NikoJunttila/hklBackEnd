@@ -1,6 +1,7 @@
-PUT http://localhost:3001/api/events/63b1a4f5434636c56f4953e6 HTTP/1.1
+PUT http://localhost:3001/api/galleria/639759141f9f5667b42e6243 HTTP/1.1
 Content-Type: application/json
 
 {
-"text":"???????????"
+"text":"?x?????????",
+"img":"https://cdn.discordapp.com/attachments/663035176259026944/1049301086000926800/Mugi_xmas_pfp.jpg"
 }

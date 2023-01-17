@@ -25,11 +25,24 @@ galleriaRouter.get("/:id", async (request, response) => {
     const body = request.body
 
     const happening = new Galleria({
-img: body.img,
-text: body.text,
+      text: body.text,
+      img: body.img,
     })
 const savedEvent = await happening.save()
 response.status(201).json(savedEvent)
-
 })
+
+galleriaRouter.put('/:id', async (request, response) => {
+  const event = await Galleria.findById(request.params.id)
+  
+    const body = request.body
+
+    const updatedEvent = {
+      img: body.img,
+      text: body.text,
+    }
+   
+    res = await Galleria.findByIdAndUpdate(request.params.id, updatedEvent, { new: true, runValidators: true})
+   response.status(200).json(res.toJSON())
+  })
 module.exports = galleriaRouter
