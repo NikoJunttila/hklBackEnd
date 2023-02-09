@@ -3,5 +3,6 @@ node_modules
 .Dockerfile
 .fly.toml
 /build
+/requests
 # Local Netlify folder
 .netlify
