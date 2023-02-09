@@ -1,7 +1,4 @@
-PUT http://localhost:3001/api/galleria/639759141f9f5667b42e6243 HTTP/1.1
+DELETE http://localhost:3001/api/products/63cbccbb9934b382c81c7655 HTTP/1.1
 Content-Type: application/json
 
-{
-"text":"?x?????????",
-"img":"https://cdn.discordapp.com/attachments/663035176259026944/1049301086000926800/Mugi_xmas_pfp.jpg"
-}
+

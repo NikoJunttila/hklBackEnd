@@ -31,7 +31,8 @@ productRouter.get("/:id", async (request, response) => {
       tuote: body.tuote,
       kuva: body.kuva,
       kuvaus: body.kuvaus,
-      määrä: body.määrä
+      määrä: body.määrä,
+      url: body.url
     })
 const savedEvent = await happening.save()
 response.status(201).json(savedEvent)
@@ -48,6 +49,7 @@ productRouter.put('/:id', async (request, response) => {
       kuva: body.kuva,
       kuvaus: body.kuvaus,
       määrä: body.määrä,
+      url: body.url,
       id: product.id
     }
    

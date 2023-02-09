@@ -8,6 +8,7 @@ const ProductSchema = new mongoose.Schema(
     kuva: String,
     kuvaus: String,
     määrä: Number,
+    url: String
   },
   { timestamps: true }
 );
